@@ -6,6 +6,8 @@ series.
 
 > Status: **Alpha** — intended for testing and development, not production.
 
+![OU Linux Akar Alpha desktop](assets/ou-linux-akar-alpha.png)
+
 The project branding uses the orangutan ("Orang Utan") mascot of the OU Linux
 distro. The default desktop is Xfce with the customized **OU Menu** launcher.
 
