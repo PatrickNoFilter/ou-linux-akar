@@ -6,10 +6,11 @@ series.
 
 > Status: **Alpha** — intended for testing and development, not production.
 
-![OU Linux Akar Alpha desktop](assets/ou-linux-akar-alpha.png)
+![OU Linux Akar Alpha desktop with the Quick Settings panel open](assets/ou-linux-akar-alpha.png)
 
 The project branding uses the orangutan ("Orang Utan") mascot of the OU Linux
-distro. The default desktop is Xfce with the customized **OU Menu** launcher.
+distro. The default desktop is Xfce with the customized **OU Menu** launcher and the
+**OU Quick Settings** tray panel (clock, date, Wi-Fi, LAN, Bluetooth and sound).
 
 ## Latest ISO
 
@@ -44,6 +45,7 @@ ID_LIKE=debian
 - [Debian](https://www.debian.org/) 13 (`trixie`) — base distribution
 - [Xfce](https://xfce.org/) — desktop environment
 - [OU Menu](https://github.com/PatrickNoFilter/xfce4-ou-menu-plugin) — customized panel launcher
+- [OU Quick Settings](https://github.com/PatrickNoFilter/ou-quick-settings) — Android-style tray panel for Wi-Fi, LAN, Bluetooth and sound
 
 ## Credits
 
