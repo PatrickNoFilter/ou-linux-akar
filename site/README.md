@@ -56,3 +56,17 @@ Option B — direct upload (no Git connection):
 - The download button points at the real ISO URL; confirm with
   `curl -I -L <url>` (expect `200` or `206` and a `Content-Length` near 3 GB).
 - `sha256sum` of the downloaded image matches the checksum shown on the page.
+
+## Alternative: deploy as a Worker with static assets
+
+The repository root also contains `wrangler.toml` and `src/index.js` for the
+Workers "Create an app → deploy from GitHub" flow:
+
+- Deploy command: `npx wrangler deploy`
+- Preview command: leave empty / turn off Preview builds
+- Build command: empty
+- Root directory: repository root (so Wrangler can see `wrangler.toml`)
+- Branch: the branch containing `wrangler.toml`, `src/` and `site/` (merge
+  `site/cloudflare` into `main` first if the form has no branch selector)
+
+The Worker publishes the `site/` folder through its `ASSETS` binding.
