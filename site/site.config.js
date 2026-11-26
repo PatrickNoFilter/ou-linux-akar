@@ -16,7 +16,11 @@ window.OU_CONFIG = {
   sourceUrl: "https://github.com/PatrickNoFilter/ou-linux-akar",
   repoMenu: "https://github.com/PatrickNoFilter/xfce4-ou-menu-plugin",
   repoQuickSettings: "https://github.com/PatrickNoFilter/ou-quick-settings",
-  // Example once you have a public URL:
-  // { name: "Primary", url: "https://your-host/OU-OS-Akar-Alpha-v36.iso", note: "Direct download" }
-  mirrors: []
+  mirrors: [
+    {
+      name: "Cloudflare R2",
+      url: "https://pub-2ec95528c38340d6a3d88f97aa7449aa.r2.dev/OU-OS-Akar-Alpha-v36.iso",
+      note: "Direct ISO download - 2.83 GiB"
+    }
+  ]
 };
