@@ -56,7 +56,7 @@ def main():
     )
     cfg = TransferConfig(
         multipart_threshold=32 * 1024 * 1024,
-        part_size=16 * 1024 * 1024,
+        multipart_chunksize=16 * 1024 * 1024,
         max_concurrency=12,
         use_threads=True,
     )
