@@ -4,7 +4,13 @@
 distribution for the desktop. This repository documents the **Akar (Alpha)**
 series.
 
-> Status: **Alpha** — intended for testing and development, not production.
+> ## ⚠️ Alpha — use at your own risk
+>
+> **Akar is still in alpha stage.** It is intended for testing and development
+> only, not for daily or production use. Installing or running this image
+> **may damage your computer**, cause loss of data, or leave the system
+> unbootable. Test it in a virtual machine or on a spare machine, back up
+> everything first, and do **not** install it on a computer you rely on.
 
 ![OU Linux Akar Alpha desktop with the Quick Settings panel open](assets/ou-linux-akar-alpha.png)
 
