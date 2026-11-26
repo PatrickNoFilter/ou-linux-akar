@@ -19,6 +19,11 @@ distro. The default desktop is Xfce with the customized **OU Menu** launcher, co
 through **OU Setting**, and the **OU Quick Settings** tray panel (clock, date,
 Wi-Fi, LAN, Bluetooth and sound).
 
+## Website & download
+
+- **Website:** https://ou-linux-akar.salatigaeventmap.workers.dev
+- **Direct ISO download:** https://pub-2ec95528c38340d6a3d88f97aa7449aa.r2.dev/OU-OS-Akar-Alpha-v36.iso
+
 ## Latest ISO
 
 | Item | Value |
@@ -28,8 +33,8 @@ Wi-Fi, LAN, Bluetooth and sound).
 | SHA-256 | `a3d34fec32ca70133a5c45a4b643609118365a268f9a932464554066650cc779` |
 
 The ISO is **not** stored in this Git repository. GitHub rejects files larger
-than 100 MB in Git, and release assets are limited to 2 GB per file. Distribute
-the ISO through an external file host, or split it into parts for releases.
+than 100 MB in Git, and release assets are limited to 2 GB per file. The v36
+image is hosted on Cloudflare R2 and linked from the website above.
 
 Verify a downloaded image with:
 
