@@ -15,8 +15,8 @@ from botocore.config import Config
 EXPECT_SHA = "a3d34fec32ca70133a5c45a4b643609118365a268f9a932464554066650cc779"
 EXPECT_SIZE = 3037724672
 KEY = "OU-OS-Akar-Alpha-v36.iso"
-PART_SIZE = 8 * 1024 * 1024
-WORKERS = 8
+PART_SIZE = 5 * 1024 * 1024
+WORKERS = 32
 
 
 def load_env(path):
