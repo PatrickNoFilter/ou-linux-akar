@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OU Linux — Orang Utan Distro · Akar Alpha</title>
+<meta name="description" content="OU Linux (Orang Utan Distro) is a Debian 13 based desktop distribution. Download the Akar Alpha live ISO, verify its checksum, and explore the Xfce desktop.">
+<meta name="theme-color" content="#f6f3ec">
+<link rel="icon" href="assets/ou-mark.webp" type="image/webp">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top" aria-label="OU Linux, back to top">
+      <img src="assets/ou-mark.webp" alt="" width="40" height="40">
+      <span>OU <span class="brand-light">Linux</span></span>
+    </a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="#download">Download</a>
+      <a href="#features">Inside</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#about">About</a>
+      <a class="nav-source" href="https://github.com/PatrickNoFilter/ou-linux-akar">GitHub ↗</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- Decide/Learn surface: one idea per section, one primary action. -->
+  <section class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Orang Utan Distro <span class="sep">/</span> <span data-config="release"></span></p>
+        <h1>OU <em>Linux</em></h1>
+        <p class="lede">A Debian 13 based desktop distribution. This is the <strong data-config="codename"></strong> alpha series — a live image for testing and development.</p>
+        <div class="badge-row">
+          <span class="badge badge-alpha"><span class="badge-dot"></span><span data-config="status"></span> build</span>
+          <span class="badge"><span data-config="desktop"></span> desktop</span>
+        </div>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#download">Download <span data-config="version"></span> <span aria-hidden="true">↓</span></a>
+          <a class="btn btn-quiet" href="#features">See what's inside</a>
+        </div>
+        <p class="hero-note">Not intended for production use.</p>
+      </div>
+      <figure class="hero-art">
+        <img src="assets/ou-logo.webp" alt="Circular OU Linux logo featuring an orangutan mascot with a small penguin" width="560" height="560">
+        <figcaption><span data-config="fullName"></span> <span class="sep">·</span> <span data-config="codename"></span> series</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <div class="status-strip">
+    <div class="wrap"><span class="strip-dot"></span> Alpha release — expect rough edges. <a href="#download">Release details below</a></div>
+  </div>
+
+  <section class="section" id="download" aria-labelledby="download-title">
+    <div class="wrap download-grid">
+      <div class="sec-head">
+        <p class="eyebrow">01 <span class="sep">/</span> Download</p>
+        <h2 id="download-title">Get the image</h2>
+        <p class="sec-intro">One live ISO. Boot it, try the desktop, then install it when you're ready.</p>
+        <dl class="meta">
+          <dt>Release</dt><dd data-config="release"></dd>
+          <dt>File</dt><dd class="mono" data-config="file"></dd>
+          <dt>Size</dt><dd class="mono" data-config="size"></dd>
+          <dt>Base</dt><dd data-config="base"></dd>
+        </dl>
+      </div>
+
+      <div class="release-panel">
+        <div class="panel-top">
+          <h3 data-config="release"></h3>
+          <p class="mono"><span data-config="file"></span> <span class="sep">·</span> <span data-config="size"></span></p>
+        </div>
+        <div id="download-primary"></div>
+        <div class="panel-block">
+          <h4>Mirrors</h4>
+          <div id="mirrors" class="mirrors"></div>
+        </div>
+        <div class="panel-block">
+          <div class="block-head">
+            <h4>Verify your download</h4>
+            <button type="button" class="copy-btn" id="copy-sha">Copy checksum</button>
+          </div>
+          <p class="fine">SHA-256 for <span class="mono" data-config="file"></span>:</p>
+          <pre class="code"><code id="sha-value" class="mono"></code></pre>
+          <p class="fine">Check it locally before writing the image to USB:</p>
+          <pre class="code code-cmd"><code id="verify-cmd" class="mono"></code></pre>
+          <p class="fine" id="copy-status" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen-section" aria-label="OU Linux Akar Alpha desktop">
+    <div class="wrap">
+      <figure class="screen-figure">
+        <img src="assets/ou-akar-desktop.webp" alt="OU Linux Akar Alpha desktop with the Quick Settings panel open" width="1600" height="900" loading="lazy">
+        <figcaption>OU Linux Akar Alpha — Xfce with the OU Quick Settings tray panel open.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section" id="features" aria-labelledby="features-title">
+    <div class="wrap features-grid">
+      <div class="sec-head">
+        <p class="eyebrow">02 <span class="sep">/</span> Inside</p>
+        <h2 id="features-title">A familiar desktop, tuned.</h2>
+        <p class="sec-intro">Built on established components, with a few OU-specific pieces on top.</p>
+      </div>
+      <ol class="feature-list">
+        <li>
+          <span class="num">01</span>
+          <div>
+            <h3>Debian 13 <span class="mono">trixie</span></h3>
+            <p>The base system. Full access to Debian's packages and repositories.</p>
+          </div>
+        </li>
+        <li>
+          <span class="num">02</span>
+          <div>
+            <h3>Xfce desktop</h3>
+            <p>A light, conventional desktop environment as the default session.</p>
+          </div>
+        </li>
+        <li>
+          <span class="num">03</span>
+          <div>
+            <h3>OU Menu <span class="arrow">↗</span></h3>
+            <p>A customized panel launcher for the desktop, configured through OU Setting.</p>
+            <a class="source-link" data-link="repoMenu" href="#">Source</a>
+          </div>
+        </li>
+        <li>
+          <span class="num">04</span>
+          <div>
+            <h3>OU Setting <span class="arrow">↗</span></h3>
+            <p>Settings dialog for OU Menu — day/night theme and quick-settings opacity.</p>
+            <a class="source-link" data-link="repoMenu" href="#">Source</a>
+          </div>
+        </li>
+        <li>
+          <span class="num">05</span>
+          <div>
+            <h3>OU Quick Settings <span class="arrow">↗</span></h3>
+            <p>Android-style tray panel for clock and date, Wi-Fi, LAN, Bluetooth and sound.</p>
+            <a class="source-link" data-link="repoQuickSettings" href="#">Source</a>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section gallery-section" id="gallery" aria-labelledby="gallery-title">
+    <div class="wrap">
+      <div class="gallery-head">
+        <p class="eyebrow">03 <span class="sep">/</span> Artwork</p>
+        <h2 id="gallery-title">The world OU comes from.</h2>
+      </div>
+      <div class="gallery-grid">
+        <figure>
+          <img src="assets/ou-forest-city.webp" alt="Futuristic green city with skyscrapers, waterfalls and an elevated train" width="1400" height="788" loading="lazy">
+          <figcaption>Forest-City Utopia</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/ou-utopia.webp" alt="Futuristic coastal eco-city with a monorail, domes and flying vehicles" width="1400" height="788" loading="lazy">
+          <figcaption>Utopian City of Tomorrow</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section about-section" id="about" aria-labelledby="about-title">
+    <div class="wrap about-grid">
+      <div>
+        <p class="eyebrow">04 <span class="sep">/</span> About</p>
+        <h2 id="about-title">OU Linux</h2>
+        <p><span data-config="fullName"></span> is a Debian-based GNU/Linux distribution for the desktop. The <span data-config="codename"></span> series is at <span data-config="status"></span> stage: testing and development, not production.</p>
+        <p>Documentation and source live in the <a data-link="sourceUrl" href="#">project repository</a>.</p>
+      </div>
+      <div>
+        <h3>Credits</h3>
+        <ul class="credits">
+          <li>The Debian Project</li>
+          <li>The Xfce Development Team</li>
+          <li>Matteo Bonanomi — Meow Menu, upstream of OU Menu</li>
+          <li>Graeme Gott — original Xfce Whisker Menu</li>
+        </ul>
+        <h3>License</h3>
+        <p class="fine">Repository documentation is provided as-is. The ISO contains third-party packages, each under its own license; refer to the packages inside the image for their terms.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <span>OU Linux <span class="sep">·</span> Orang Utan Distro</span>
+    <a data-link="sourceUrl" href="#">Source repository ↗</a>
+  </div>
+</footer>
+
+<script src="site.config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

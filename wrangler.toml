@@ -1,0 +1,10 @@
+# Static OU Linux site deployed as a Worker with static assets.
+# Deploy command in Cloudflare: npx wrangler deploy
+name = "ou-linux-akar"
+main = "src/index.js"
+compatibility_date = "2026-11-26"
+workers_dev = true
+
+[assets]
+directory = "./site"
+binding = "ASSETS"
