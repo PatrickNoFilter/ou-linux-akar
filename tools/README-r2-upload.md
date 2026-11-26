@@ -54,3 +54,25 @@ content length near 3,037,724,672 bytes), then `sha256sum` the downloaded file.
 If you'd rather not create a token: in the R2 bucket, use **Upload** and drag in
 `OU-OS-Akar-Alpha-v36.iso`, enable public access, and send me the resulting URL.
 I'll wire it into the site and verify it the same way.
+
+## Card-free alternative: Internet Archive (recommended when R2 needs a card)
+
+R2 asks for a payment method. Internet Archive does not, and 2.83 GiB is well
+within its limits (items up to ~100 GB, single files up to ~500 GB).
+
+1. Create a free account: https://archive.org/account/register.php
+2. Get your IA-S3 keys: https://archive.org/account/s3.php
+3. Write a local env file (chmod 600, never in chat or Git):
+   ```
+   ~/.config/ou-archive.env
+   IA_ACCESS_KEY_ID=...
+   IA_SECRET_ACCESS_KEY=...
+   IA_IDENTIFIER=ou-linux-akar-akar-alpha-v36
+   ```
+   The identifier must be globally unique on archive.org.
+4. Tell me the path. `tools/upload-iso-archive.sh` verifies the local SHA-256,
+   installs its own CLI into `~/.local/share/ou-linux-ia-libs`, uploads with
+   `--verify`, and prints the permanent URL:
+   `https://archive.org/download/<identifier>/OU-OS-Akar-Alpha-v36.iso`
+5. I add that URL to `mirrors` in `site/site.config.js`, push to `main`, and
+   verify the live download button and HTTP range response.
